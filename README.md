@@ -1,5 +1,5 @@
 
-### Análise e Classificação de Promoções para Otimização de Consumo ###
+# Análise e Classificação de Promoções para Otimização de Consumo 
 
 Este projeto completo utiliza PySpark para processar, limpar e modelar dados relacionados a interações de clientes com promoções. O objetivo final é criar um modelo de Machine Learning capaz de prever quais promoções têm maior probabilidade de gerar alto consumo, permitindo que as empresas otimizem suas estratégias de marketing e melhorem o engajamento do cliente.
 
@@ -9,7 +9,7 @@ No dinâmico cenário do varejo e serviços, a personalização de ofertas é um
 ## Estrutura do Projeto
 O projeto é organizado em etapas sequenciais, cada uma com um objetivo claro:
 
-# 1_data_processing.ipynb (Ingestão de Dados):
+### 1_data_processing.ipynb (Ingestão de Dados):
 Baixa um arquivo .tar.gz contendo dados brutos de uma URL remota.
 Extrai os arquivos JSON (offers.json, profile.json, transactions.json) para o diretório data/raw.
 Carrega esses JSONs em DataFrames PySpark para inspeção inicial.
@@ -18,7 +18,7 @@ Scripts específicos para cada DataFrame (df_offers, df_customers, df_transactio
 Realizam validações, tratamento de nulos, padronização de formatos e tipos de dados.
 Salvam os DataFrames limpos no diretório data/processed.
 
-# 2_modeling.ipynb (Construção e Treinamento do Modelo):
+### 2_modeling.ipynb (Construção e Treinamento do Modelo):
 Lê os DataFrames limpos do diretório data/processed.
 Realiza engenharia de features combinando os dados de transações, clientes e ofertas.
 Cria uma label (rótulo) binária para indicar o sucesso da promoção com base no consumo.
