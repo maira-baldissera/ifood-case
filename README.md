@@ -9,7 +9,7 @@ No dinâmico cenário do varejo e serviços, a personalização de ofertas é um
 ## Estrutura do Projeto
 O projeto é organizado em etapas sequenciais, cada uma com um objetivo claro:
 
-### 1_data_processing.ipynb (Ingestão de Dados):
+### 1_data_processing.ipynb (Leitura de Dados):
 Baixa um arquivo .tar.gz contendo dados brutos de uma URL remota.
 Extrai os arquivos JSON (offers.json, profile.json, transactions.json) para o diretório data/raw.
 Carrega esses JSONs em DataFrames PySpark para inspeção inicial.
@@ -29,9 +29,9 @@ Treina o modelo e avalia seu desempenho usando AUC.
 ## Pré-requisitos
 Para executar este projeto, você precisará ter o seguinte instalado e configurado:
 
-Python 3.x
-Apache Spark (versão 3.x recomendada)
-PySpark
+Python 3.x,
+Apache Spark (versão 3.x recomendada),
+PySpark,
 Java Development Kit (JDK) (compatível com sua versão do Spark)
 
 ## Como Executar
